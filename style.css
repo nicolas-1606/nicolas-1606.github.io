@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
 
 #card {
-  width: 90%; /* Reducir el ancho para dispositivos móviles */
-  max-width: 90%; /* Añadir un ancho máximo */
-  margin: 2em auto; /* Ajustar el margen */
-  position: static; /* Cambiar la posición a estática para que no sea fija */
-  visibility: hidden;
+  height: 500px;
+  width: 800px;
+  margin: 5em auto;
+  position: fixed;
+  top: -15px;
+  left: 25%;
   display: flex;
-  flex-direction: column; /* Alinear contenido en columna */
-  align-items: center; /* Centrar elementos horizontalmente */
-  text-align: center; /* Centrar texto */
+  visibility: hidden;
 }
 
 /* Estilos para dispositivos móviles */
@@ -24,10 +23,8 @@
     top: 50px;
  
   }
-  .side {
-    width: 90%; /* Reducir el ancho para dispositivos móviles */
-    max-width: 90%; /* Añadir un ancho máximo */
-    margin: 0 auto; /* Ajustar el margen */
+  .side.side.one {
+    display: none; 
   }
   #card p {
     padding-left: 0 !important; /* Eliminar el relleno a la izquierda en dispositivos móviles */
@@ -202,18 +199,11 @@ body {
    top:80px;
    left:15px;
    transition: .5s;
-   font-size: 1em; /* Ajuste del tamaño de fuente */
-  padding-left: 0 !important; /* Eliminar el relleno a la izquierda en dispositivos móviles */
-  padding-right: 0 !important; /* Eliminar el relleno a la derecha en dispositivos móviles */
  }
  
- .valentines-day {
-  position: relative;
-  cursor: pointer;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+ .valentines-day:hover .heart {
+   transform: translateY(-50px) rotate(-45deg);
+ }
  
  .valentines-day:hover .text {
    transform: translateY(-50px);
@@ -293,12 +283,5 @@ body {
 
   .text {
       font-size: 1em; /* Ajuste del tamaño de fuente */
-  }
-  .valentines-day {
-    top: 10%; /* Ajustar posición vertical */
-  }
-
-  .made-with-love {
-    top: 10px; /* Ajustar posición vertical */
   }
 }
