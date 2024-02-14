@@ -2,44 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Carta de San Valentín novia encoded</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
   <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+    .valentines-day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 500px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .valentines-day .envelope,
+    .valentines-day .heart,
+    .valentines-day .front {
+      width: 100%;
+      height: 100px;
+    }
+    .valentines-day .text {
+      text-align: center;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    #card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .side {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .side.one {
+      background-color: #ffcccc;
+    }
+    .side.two {
+      background-color: #ff99cc;
+    }
+    .side.two p, .side.two h2 {
+      margin: 10px 0;
+    }
+    .made-with-love {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .made-with-love span {
+      color: #ff69b4;
+    }
+    @media (max-width: 600px) {
+      .valentines-day {
+        width: 90%;
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="valentines-day">
-  <div class="envelope"></div>
-  <div class="heart"></div>
-  <div class="text">HAPPY <br>VALENTINE'S <br>DAY!<br>MY LOVE! </div>
-  <div class="front"></div>
-</div>
-
-<div id="card">
-  <div class="side one">
-    <i class="fas fa-heart"></i>
+  <div class="valentines-day">
+    <div class="envelope"></div>
+    <div class="heart"></div>
+    <div class="text">HAPPY <br>VALENTINE'S <br>DAY!<br>MY LOVE! </div>
+    <div class="front"></div>
   </div>
-  <div class="side two">
-   
-    <p>MI DULCE AMOR,</p>
-    <p>En este día especial, simplemente quiero expresar lo que siento desde lo más profundo de mi corazón. Tú eres mi todo. Cada vez que te veo, siento que el mundo tiene sentido. Eres mi compañer@ de vida, mi apoyo incondicional y mi razón para sonreír cada día.</p>
-    <p>Gracias por estar a mi lado en los buenos y malos momentos, por ser mi confidente y mi mejor amig@. Feliz San Valentín, amor.</p>
-     <h2>TU NOVI@</h2>
+  <div id="card">
+    <div class="side one">
+      <i class="fas fa-heart"></i>
+    </div>
+    <div class="side two">
+      <p>MI DULCE AMOR,</p>
+      <p>En este día especial, simplemente quiero expresar lo que siento desde lo más profundo de mi corazón. Tú eres mi todo. Cada vez que te veo, siento que el mundo tiene sentido. Eres mi compañer@ de vida, mi apoyo incondicional y mi razón para sonreír cada día.</p>
+      <p>Gracias por estar a mi lado en los buenos y malos momentos, por ser mi confidente y mi mejor amig@. Feliz San Valentín, amor.</p>
+      <h2>TU NOVI@</h2>
+    </div>
   </div>
-</div>
-
-<div class='made-with-love'>
-  HECHO 
-   <span>♥</span>
-  POR EL HUEVO
-
-  
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="./script.js"></script>
-
+  <div class='made-with-love'>
+    HECHO <span>♥</span> POR EL HUEVO
+  </div>
 </body>
 </html>
